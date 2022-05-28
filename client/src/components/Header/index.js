@@ -7,7 +7,6 @@ import {
   AppBar,
   Toolbar,
   Breadcrumbs,
-  makeStyles,
   useScrollTrigger,
   IconButton,
   Box,
@@ -20,14 +19,15 @@ import {
   Link,
   Typography,
   capitalize,
-} from '@material-ui/core';
+} from '@mui/material';
+import makeStyles from '@mui/styles/makeStyles';
 import { ChevronDown } from '@styled-icons/feather/ChevronDown';
 import { Bell } from '@styled-icons/feather/Bell';
 import { ToggleLeft } from '@styled-icons/feather/ToggleLeft';
 import { ToggleRight } from '@styled-icons/feather/ToggleRight';
 import { Home } from '@styled-icons/feather/Home';
 import { Circle } from '@styled-icons/feather/Circle';
-import { grey } from '@material-ui/core/colors';
+import { grey } from '@mui/material/colors';
 import { links } from 'utils/routes';
 import ukFlag from 'static/icons/uk.svg';
 import grFlag from 'static/icons/ger.svg';
@@ -83,7 +83,7 @@ const headerStyles = makeStyles((theme) => ({
   breadcrumbsContainer: {
     padding: theme.spacing(1, 3),
     marginLeft: theme.spacing(1),
-    backgroundColor: theme.palette.type === 'light' ? grey[100] : grey[800],
+    backgroundColor: theme.palette.mode === 'light' ? grey[100] : grey[800],
     borderRadius: theme.spacing(2),
     color: theme.palette.text.secondary,
     display: 'flex',
@@ -249,9 +249,9 @@ function Header({ open, lng, changeLanguage, handleSideNav }) {
               >
                 {selectedLngOption[0].label}
               </Button>
-              <IconButton aria-label="show 4 new notifications" color="default">
+              <IconButton aria-label="show 4 new notifications" color="default" size="large">
                 <Badge
-                  overlap="circle"
+                  overlap="circular"
                   anchorOrigin={{
                     vertical: 'top',
                     horizontal: 'right',

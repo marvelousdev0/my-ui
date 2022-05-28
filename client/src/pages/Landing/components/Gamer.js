@@ -1,12 +1,11 @@
 import React from 'react';
 import Color from 'color';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import { useFourThreeCardMediaStyles } from '@mui-treasury/styles/cardMedia/fourThree';
-import { Box } from '@material-ui/core';
+import makeStyles from '@mui/styles/makeStyles';
+import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import { Box } from '@mui/material';
 
 const useGridStyles = makeStyles((theme) => ({
   root: {
@@ -60,11 +59,10 @@ const useStyles = makeStyles(() => ({
 }));
 
 const CustomCard = ({ classes, image, title, subtitle }) => {
-  const mediaStyles = useFourThreeCardMediaStyles();
   return (
     <div className={classes.cardWrapper}>
       <Card className={classes.card}>
-        <CardMedia classes={mediaStyles} image={image} />
+        <CardMedia image={image} />
         <CardContent className={classes.content}>
           <Typography className={classes.title} variant={'h2'}>
             {title}

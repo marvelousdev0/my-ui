@@ -1,5 +1,5 @@
 import React from 'react';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import { myTheme, ThemeWrapper, StorybookGlobalStyle } from '../src/theme';
 
 export default function themeDecorator(story) {

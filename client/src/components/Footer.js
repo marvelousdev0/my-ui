@@ -1,7 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
-import { AppBar, Toolbar, makeStyles, useScrollTrigger, Box, Typography } from '@material-ui/core';
+import { AppBar, Toolbar, useScrollTrigger, Box, Typography } from '@mui/material';
+import makeStyles from '@mui/styles/makeStyles';
 import { Copyright } from '@styled-icons/boxicons-solid/Copyright';
 
 const drawerWidth = 272;

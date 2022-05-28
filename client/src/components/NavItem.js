@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ListItem, ListItemIcon, ListItemText, makeStyles, Box, Tooltip } from '@material-ui/core';
+import { ListItem, ListItemIcon, ListItemText, Box, Tooltip } from '@mui/material';
+import makeStyles from '@mui/styles/makeStyles';
 import { Link } from 'react-router-dom';
-import { blue, blueGrey } from '@material-ui/core/colors';
+import { blue, blueGrey } from '@mui/material/colors';
 import { ChevronDown } from '@styled-icons/feather/ChevronDown';
 import { ChevronUp } from '@styled-icons/feather/ChevronUp';
 import { Trans } from 'react-i18next';

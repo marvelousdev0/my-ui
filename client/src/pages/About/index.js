@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Button } from '@material-ui/core';
+import { Box, Typography, Button } from '@mui/material';
 import './style.css';
 
 export default function About() {

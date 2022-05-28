@@ -1,7 +1,8 @@
 import React from 'react';
 import { toast } from 'react-toastify';
-import { Typography, Box, makeStyles } from '@material-ui/core';
-import { green, red, orange, blue } from '@material-ui/core/colors';
+import { Typography, Box } from '@mui/material';
+import makeStyles from '@mui/styles/makeStyles';
+import { green, red, orange, blue } from '@mui/material/colors';
 import { CheckCircle } from '@styled-icons/feather/CheckCircle';
 import { Info } from '@styled-icons/feather/Info';
 import { AlertTriangle } from '@styled-icons/feather/AlertTriangle';

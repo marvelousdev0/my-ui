@@ -1,5 +1,7 @@
 import React from 'react';
-import { Box, CircularProgress, makeStyles } from '@material-ui/core';
+import { Box, CircularProgress } from '@mui/material';
+
+import makeStyles from '@mui/styles/makeStyles';
 
 // Inspired by the former Facebook spinners.
 const useStylesFacebook = makeStyles((theme) => ({
@@ -7,7 +9,7 @@ const useStylesFacebook = makeStyles((theme) => ({
     position: 'relative',
   },
   bottom: {
-    color: theme.palette.grey[theme.palette.type === 'light' ? 200 : 700],
+    color: theme.palette.grey[theme.palette.mode === 'light' ? 200 : 700],
   },
   top: {
     color: '#1a90ff',

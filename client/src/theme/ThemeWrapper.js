@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ThemeProvider, createGlobalStyle } from 'styled-components';
-import { StylesProvider, CssBaseline, MuiThemeProvider } from '@material-ui/core';
+import { ThemeProvider as StyledThemeProvider, createGlobalStyle } from 'styled-components';
+import { StylesProvider, ThemeProvider } from '@mui/styles';
+import { CssBaseline } from '@mui/material';
 
 export const GlobalStyle = createGlobalStyle`
     html, body {
@@ -23,17 +24,15 @@ export const StorybookGlobalStyle = createGlobalStyle`
 
 function ThemeWrapper({ children, theme }) {
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <StylesProvider injectFirst>
-          <MuiThemeProvider theme={theme}>
-            <GlobalStyle />
-            <CssBaseline />
-            {children}
-          </MuiThemeProvider>
-        </StylesProvider>
-      </ThemeProvider>
-    </>
+    <StyledThemeProvider theme={theme}>
+      <StylesProvider injectFirst>
+        <ThemeProvider theme={theme}>
+          <GlobalStyle />
+          <CssBaseline />
+          {children}
+        </ThemeProvider>
+      </StylesProvider>
+    </StyledThemeProvider>
   );
 }
 

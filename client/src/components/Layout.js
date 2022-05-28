@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
-import { Box, makeStyles } from '@material-ui/core';
+import { Box } from '@mui/material';
+import makeStyles from '@mui/styles/makeStyles';
 import Header from './Header';
 import SideNav from './SideNav';
 import Content from './Content';

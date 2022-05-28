@@ -1,6 +1,6 @@
 import React from 'react';
 import Loadable from 'react-loadable';
-import { Box, Typography } from '@material-ui/core';
+import { Box, Typography } from '@mui/material';
 import { useTranslation, Trans } from 'react-i18next';
 import { landingStyles, StyledButton } from './style';
 import Loading from 'components/Loading';

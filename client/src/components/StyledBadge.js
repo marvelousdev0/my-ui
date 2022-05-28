@@ -1,5 +1,5 @@
-import Badge from '@material-ui/core/Badge';
-import { withStyles } from '@material-ui/core/styles';
+import Badge from '@mui/material/Badge';
+import withStyles from '@mui/styles/withStyles';
 
 const StyledBadge = withStyles((theme) => ({
   badge: {

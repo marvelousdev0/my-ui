@@ -4,8 +4,8 @@ import clsx from 'clsx';
 import { useLocation, useHistory } from 'react-router-dom';
 import { TweenMax, Power3 } from 'gsap';
 // eslint-disable-next-line no-unused-vars
-import { Drawer, Box, List, Toolbar, Typography, Collapse, IconButton, Avatar, Chip, Tooltip } from '@material-ui/core';
-import { blue, red, green } from '@material-ui/core/colors';
+import { Drawer, Box, List, Toolbar, Typography, Collapse, IconButton, Avatar, Chip, Tooltip } from '@mui/material';
+import { blue, red, green } from '@mui/material/colors';
 import { Home } from '@styled-icons/feather/Home';
 import { Info } from '@styled-icons/feather/Info';
 import { Smartphone } from '@styled-icons/feather/Smartphone';
